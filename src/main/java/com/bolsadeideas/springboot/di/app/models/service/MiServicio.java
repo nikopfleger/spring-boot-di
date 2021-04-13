@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
 //@Component hace que sea una componente de spring y podamos inyectarlo para desacoplar
 //Puedo usar @Service, es lo mismo solamente indica que es una fachada de logica de negocio
 //Primary le digo la que quiero que sea por defecto
-@Component("miServicioSimple")
-@Primary
+//@Component("miServicioSimple")
+//@Primary
 public class MiServicio implements IServicio {
 	
 	

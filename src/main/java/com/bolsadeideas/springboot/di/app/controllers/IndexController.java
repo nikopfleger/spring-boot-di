@@ -22,8 +22,13 @@ public class IndexController {
 	//Si tengo mas de una clase que usa IServicio de interfaz tengo que especificar sino uso @Autowired
 	//Con @Qualifier le digo cual quiero (por ejemplo si no es el primario), puedo usar Qualifier sin Primary
 	//Conviene cambiar los nombres en las clases para no tocar esta parte y pueda ser transparente
+	
+	//TODO ESTO SI NO USO @Bean en AppConfig
+	//SI USO CLASES DE EXTERNOS SI O SI TENGO QUE USAR BEAN
+	
+	//@Qualifier("miServicioSimple") si quiero elegir ya sea con @Bean o sin
 	@Autowired
-	@Qualifier("miServicioPrincipal")
+
 	private IServicio servicio;
 	
 	/*
